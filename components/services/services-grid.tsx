@@ -87,7 +87,7 @@ export function ServicesGrid() {
                 
                 <Button asChild className="w-full gap-2" size="lg">
                   <a
-                    href={`https://wa.me/573001234567?text=${encodeURIComponent(service.whatsappMessage)}`}
+                    href={`https://wa.me/573004862085?text=${encodeURIComponent(service.whatsappMessage)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
