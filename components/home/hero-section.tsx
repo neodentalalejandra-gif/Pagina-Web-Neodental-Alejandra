@@ -76,8 +76,8 @@ export function HeroSection() {
                     <span className="text-2xl">🦷</span>
                   </div>
                   <div>
-                    <p className="font-semibold text-foreground">Dra. Maria Rodriguez</p>
-                    <p className="text-sm text-muted-foreground">Odontologa General</p>
+                    <p className="font-semibold text-foreground">Dra. Alejandra Riascos</p>
+                    <p className="text-sm text-muted-foreground">Odontologa Especializada</p>
                   </div>
                 </div>
               </div>
