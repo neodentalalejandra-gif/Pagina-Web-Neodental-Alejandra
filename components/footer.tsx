@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Facebook, Instagram, MapPin, Mail, Phone, Clock } from "lucide-react"
 
 const navigation = {
@@ -35,13 +36,14 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">N</span>
-              </div>
-              <span className="text-xl font-bold">
-                Neo<span className="text-primary">dental</span>
-              </span>
+            <Link href="/" className="flex items-center mb-4">
+              <Image
+                src="/images/logo-neodental.jpg"
+                alt="Neodental - Odontologia Especializada"
+                width={120}
+                height={43}
+                className="h-11 w-auto object-contain bg-background rounded-lg p-1"
+              />
             </Link>
             <p className="text-background/70 text-sm leading-relaxed mb-4">
               Tu sonrisa es nuestra prioridad. Ofrecemos servicios odontologicos de alta calidad con un equipo profesional dedicado a tu bienestar.
