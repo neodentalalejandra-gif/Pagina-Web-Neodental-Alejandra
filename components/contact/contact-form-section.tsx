@@ -94,7 +94,7 @@ export function ContactFormSection() {
                     <Input
                       id="phone"
                       type="tel"
-                      placeholder="+57 300 123 4567"
+                      placeholder="+57 300 486 2085"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                       className="h-12"
@@ -161,7 +161,7 @@ export function ContactFormSection() {
                   </div>
                   <div>
                     <p className="text-xs text-muted-foreground">Telefono</p>
-                    <p className="font-medium">+57 300 123 4567</p>
+                    <p className="font-medium">+57 300 486 2085</p>
                   </div>
                 </a>
               </div>

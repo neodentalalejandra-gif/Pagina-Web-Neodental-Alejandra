@@ -55,7 +55,7 @@ export default function ContactoPage() {
               </Button>
               <Button asChild variant="outline" size="lg" className="bg-transparent border-card/30 text-card hover:bg-card/10">
                 <a href="tel:+573004862085">
-                  Llamar: +57 300 123 4567
+                  Llamar: +57 300 486 2085
                 </a>
               </Button>
             </div>
