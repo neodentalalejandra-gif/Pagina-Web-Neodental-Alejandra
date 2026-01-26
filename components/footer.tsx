@@ -105,8 +105,8 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                 <span className="text-sm text-background/70">
-                  Calle 45 #23-67, Local 101<br />
-                  Bogota, Colombia
+                  Tv 39D #74 36 Consultorio 201,<br />
+                  Laureles - Estadio, Medellín, Laureles, Medellín, Antioquia
                 </span>
               </li>
               <li className="flex items-center gap-3">
@@ -142,7 +142,7 @@ export function Footer() {
         <div className="mt-12 pt-8 border-t border-background/10">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-sm text-background/50">
-              2024 Neodental. Todos los derechos reservados.
+              2025 Neodental. Todos los derechos reservados.
             </p>
             <p className="text-sm text-background/50">
               Diseñado con cuidado para tu sonrisa

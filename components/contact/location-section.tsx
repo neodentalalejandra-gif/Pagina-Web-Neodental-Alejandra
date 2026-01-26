@@ -27,7 +27,7 @@ export function LocationSection() {
           {/* Map */}
           <div className="lg:col-span-3 rounded-2xl overflow-hidden shadow-lg h-[400px] lg:h-[500px] border border-border">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.8523475846987!2d-74.08388942500488!3d4.609710995342988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99a7ebf5c8b1%3A0x6d1d6e5e4c5c5c5c!2sBogot%C3%A1%2C%20Colombia!5e0!3m2!1ses!2s!4v1704067200000!5m2!1ses!2s"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4619.483338183602!2d-75.59670615076553!3d6.246761865532345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44291d22d870b7%3A0xa2e76433cefbf719!2sNeodental%20Centro%20Odontol%C3%B3gico%20Laureles!5e0!3m2!1ses-419!2sco!4v1769439660664!5m2!1ses-419!2sco"
               width="100%"
               height="100%"
               style={{ border: 0 }}
@@ -53,19 +53,25 @@ export function LocationSection() {
               </div>
               
               <div className="space-y-3 mb-6">
-                <p className="text-foreground font-medium">Calle 45 #23-67, Local 101</p>
-                <p className="text-foreground">Bogota, Colombia</p>
+                <p className="text-foreground font-medium">Tv 39D #74 36 Consultorio 201</p>
+                <p className="text-foreground">Laureles - Estadio, Medellin, Antioquia</p>
                 <div className="flex items-start gap-2 pt-2">
+                  <MapPin className="w-4 h-4 text-primary mt-0.5 shrink-0" />
+                  <p className="text-sm text-muted-foreground">
+                    Cerca al Parque de Laureles - 2do piso
+                  </p>
+                </div>
+                <div className="flex items-start gap-2">
                   <Car className="w-4 h-4 text-muted-foreground mt-0.5 shrink-0" />
                   <p className="text-sm text-muted-foreground">
-                    Parqueadero disponible en el edificio. Frente al Centro Comercial Plaza Central.
+                    Zona de parqueo cercana disponible
                   </p>
                 </div>
               </div>
               
               <Button asChild className="w-full gap-2">
                 <a
-                  href="https://maps.google.com/?q=4.6097,-74.0817"
+                  href="https://www.google.com/maps/place/Neodental+Centro+Odontol%C3%B3gico+Laureles/@6.2466819,-75.5968864,17z/data=!3m1!4b1!4m6!3m5!1s0x8e44291d22d870b7:0xa2e76433cefbf719!8m2!3d6.2466766!4d-75.5943115!16s%2Fg%2F11wptddh_k?entry=ttu&g_ep=EgoyMDI2MDEyMS4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
