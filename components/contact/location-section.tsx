@@ -53,19 +53,25 @@ export function LocationSection() {
               </div>
               
               <div className="space-y-3 mb-6">
-                <p className="text-foreground font-medium">Calle 45 #23-67, Local 101</p>
-                <p className="text-foreground">Bogota, Colombia</p>
+                <p className="text-foreground font-medium">Tv 39D #74 36 Consultorio 201</p>
+                <p className="text-foreground">Laureles - Estadio, Medellin, Antioquia</p>
                 <div className="flex items-start gap-2 pt-2">
+                  <MapPin className="w-4 h-4 text-primary mt-0.5 shrink-0" />
+                  <p className="text-sm text-muted-foreground">
+                    Cerca al Parque de Laureles - 2do piso
+                  </p>
+                </div>
+                <div className="flex items-start gap-2">
                   <Car className="w-4 h-4 text-muted-foreground mt-0.5 shrink-0" />
                   <p className="text-sm text-muted-foreground">
-                    Parqueadero disponible en el edificio. Frente al Centro Comercial Plaza Central.
+                    Zona de parqueo cercana disponible
                   </p>
                 </div>
               </div>
               
               <Button asChild className="w-full gap-2">
                 <a
-                  href="https://maps.google.com/?q=4.6097,-74.0817"
+                  href="https://www.google.com/maps/place/Neodental+Centro+Odontol%C3%B3gico+Laureles/@6.2466819,-75.5968864,17z/data=!3m1!4b1!4m6!3m5!1s0x8e44291d22d870b7:0xa2e76433cefbf719!8m2!3d6.2466766!4d-75.5943115!16s%2Fg%2F11wptddh_k?entry=ttu&g_ep=EgoyMDI2MDEyMS4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
