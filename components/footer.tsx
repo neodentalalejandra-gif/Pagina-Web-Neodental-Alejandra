@@ -24,7 +24,7 @@ const socialLinks = [
   },
   {
     name: "Instagram",
-    href: "https://instagram.com/neodental",
+    href: "https://instagram.com/dra.alejandrariascos",
     icon: Instagram,
   },
 ]
