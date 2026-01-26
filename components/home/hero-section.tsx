@@ -14,11 +14,11 @@ export function HeroSection() {
               Bienvenido a Neodental
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6 text-balance">
-              Tu sonrisa es nuestra{" "}
-              <span className="text-primary">prioridad</span>
+              Una experiencia{" "}
+              <span className="text-primary">transformadora</span> en salud dental
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8 max-w-lg mx-auto lg:mx-0">
-              En Neodental combinamos tecnologia de vanguardia con un trato humano y cercano para brindarte la mejor experiencia dental. Tu confianza es nuestro mayor logro.
+              Sabemos la importancia y el impacto que tiene tu salud oral a nivel fisico y emocional. Contamos con un gran equipo de especialistas con enfoque humano y profesional.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button asChild size="lg" className="gap-2">

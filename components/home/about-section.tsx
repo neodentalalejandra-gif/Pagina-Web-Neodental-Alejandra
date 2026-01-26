@@ -2,12 +2,12 @@ import Image from "next/image"
 import { CheckCircle } from "lucide-react"
 
 const features = [
-  "Equipo profesional altamente capacitado",
-  "Tecnologia dental de ultima generacion",
-  "Ambiente comodo y relajante",
-  "Atencion personalizada para cada paciente",
-  "Tratamientos con los mas altos estandares",
-  "Horarios flexibles para tu comodidad",
+  "Equipo de especialistas con enfoque humano",
+  "La mejor tecnologia para tu atencion",
+  "Atencion integral, eficiente y de calidad",
+  "Servicios para pacientes nacionales y extranjeros",
+  "Tiempo adecuado para cada procedimiento",
+  "Experiencia transformadora garantizada",
 ]
 
 export function AboutSection() {
@@ -35,13 +35,13 @@ export function AboutSection() {
               Sobre Nosotros
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6 text-balance">
-              Mas de 10 años cuidando la sonrisa de nuestros pacientes
+              Tu salud oral impacta tu bienestar fisico y emocional
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Neodental nacio con una vision clara: transformar la experiencia dental en algo positivo y libre de ansiedad. Fundado por la Dra. Maria Rodriguez, nuestro consultorio se ha convertido en un referente de confianza y calidad en la ciudad.
+              En nuestra consulta queremos ofrecerte una experiencia transformadora en salud dental. Contamos con un gran equipo de especialistas con enfoque humano y profesional, asi como la mejor tecnologia para brindarte una atencion integral, eficiente y de calidad.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              Nuestra filosofia se basa en escuchar a cada paciente, entender sus necesidades y diseñar un plan de tratamiento personalizado. Creemos que cada sonrisa es unica y merece un cuidado especial.
+              Ofrecemos nuestros servicios a pacientes nacionales y extranjeros, contando con el tiempo requerido para la realizacion de diferentes procedimientos. Tu confianza y bienestar son nuestra prioridad.
             </p>
             
             <div className="grid sm:grid-cols-2 gap-4">
