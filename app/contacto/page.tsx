@@ -45,7 +45,7 @@ export default function ContactoPage() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg" className="gap-2">
                 <a
-                  href="https://wa.me/573001234567?text=Hola,%20me%20gustaría%20agendar%20una%20cita"
+                  href="https://wa.me/573004862085?text=Hola,%20me%20gustaría%20agendar%20una%20cita"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -54,7 +54,7 @@ export default function ContactoPage() {
                 </a>
               </Button>
               <Button asChild variant="outline" size="lg" className="bg-transparent border-card/30 text-card hover:bg-card/10">
-                <a href="tel:+573001234567">
+                <a href="tel:+573004862085">
                   Llamar: +57 300 123 4567
                 </a>
               </Button>
