@@ -89,7 +89,7 @@ export const translations: Record<Locale, Record<string, string>> = {
 
     // Servicios Page
     "servicios.badge": "Nuestros Servicios",
-    "servicios.title": "Cuidado dental integral para toda la familia",
+    "servicios.title": "Todos tus tratamientos dentales en un solo lugar",
     "servicios.description": "Ofrecemos una amplia gama de tratamientos dentales utilizando tecnologia de punta y tecnicas modernas para garantizar los mejores resultados.",
     "servicios.cotiza": "Cotiza conmigo",
     "servicios.s1.title": "Limpieza Dental Profesional",
@@ -314,7 +314,7 @@ export const translations: Record<Locale, Record<string, string>> = {
 
     // Servicios Page
     "servicios.badge": "Our Services",
-    "servicios.title": "Comprehensive dental care for the whole family",
+    "servicios.title": "All your dental treatments in one place",
     "servicios.description": "We offer a wide range of dental treatments using cutting-edge technology and modern techniques to ensure the best results.",
     "servicios.cotiza": "Get a quote",
     "servicios.s1.title": "Professional Dental Cleaning",
