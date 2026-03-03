@@ -44,7 +44,7 @@ export function Header() {
             ))}
             <Button asChild size="sm" className="gap-2">
               <a
-                href="https://wa.me/573004862085?text=Hola,%20me%20gustaría%20agendar%20una%20cita"
+                href="https://wa.me/573053033981?text=Hola,%20me%20gustaría%20agendar%20una%20cita"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -85,7 +85,7 @@ export function Header() {
               ))}
               <Button asChild size="sm" className="gap-2 mt-2">
                 <a
-                  href="https://wa.me/573004862085?text=Hola,%20me%20gustaría%20agendar%20una%20cita"
+                  href="https://wa.me/573053033981?text=Hola,%20me%20gustaría%20agendar%20una%20cita"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

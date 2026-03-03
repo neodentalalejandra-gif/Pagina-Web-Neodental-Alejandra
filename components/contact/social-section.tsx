@@ -6,7 +6,7 @@ const socialLinks = [
     name: "WhatsApp",
     description: "Escríbenos directamente",
     icon: MessageCircle,
-    href: "https://wa.me/573004862085?text=Hola,%20me%20gustaría%20agendar%20una%20cita",
+    href: "https://wa.me/573053033981?text=Hola,%20me%20gustaría%20agendar%20una%20cita",
     color: "bg-[#25D366] hover:bg-[#128C7E]",
     followers: "Chat directo",
   },

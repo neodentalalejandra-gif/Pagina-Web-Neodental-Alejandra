@@ -28,7 +28,7 @@ export function ContactFormSection() {
 
   const handleWhatsAppSubmit = () => {
     const message = `Hola, mi nombre es ${formData.name}. ${formData.message}. Mi correo es ${formData.email} y mi telefono ${formData.phone}.`
-    window.open(`https://wa.me/573004862085?text=${encodeURIComponent(message)}`, "_blank")
+    window.open(`https://wa.me/573053033981?text=${encodeURIComponent(message)}`, "_blank")
   }
 
   return (
@@ -94,7 +94,7 @@ export function ContactFormSection() {
                     <Input
                       id="phone"
                       type="tel"
-                      placeholder="+57 300 486 2085"
+                      placeholder="+57 303 303 3981"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                       className="h-12"
@@ -153,7 +153,7 @@ export function ContactFormSection() {
                 <div className="hidden sm:block w-px h-10 bg-border" />
                 
                 <a
-                  href="tel:+573004862085"
+                  href="tel:+573053033981"
                   className="flex items-center gap-3 text-foreground hover:text-primary transition-colors group"
                 >
                   <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
@@ -161,7 +161,7 @@ export function ContactFormSection() {
                   </div>
                   <div>
                     <p className="text-xs text-muted-foreground">Telefono</p>
-                    <p className="font-medium">+57 300 486 2085</p>
+                    <p className="font-medium">+57 305 303 3981</p>
                   </div>
                 </a>
               </div>

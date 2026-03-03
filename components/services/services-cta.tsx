@@ -16,7 +16,7 @@ export function ServicesCTA() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="gap-2">
               <a
-                href="https://wa.me/573004862085?text=Hola,%20tengo%20una%20consulta%20sobre%20sus%20servicios"
+                href="https://wa.me/573053033981?text=Hola,%20tengo%20una%20consulta%20sobre%20sus%20servicios"
                 target="_blank"
                 rel="noopener noreferrer"
               >
