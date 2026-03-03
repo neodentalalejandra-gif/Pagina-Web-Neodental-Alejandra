@@ -1,17 +1,21 @@
+"use client"
+
 import Link from "next/link"
 import { Phone, ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { useLanguage } from "@/lib/language-context"
 
 export function TestimoniosCTA() {
+  const { t } = useLanguage()
+
   return (
     <section className="py-16 lg:py-24 bg-primary">
       <div className="container mx-auto px-4 lg:px-8 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-4 text-balance">
-          Tu transformacion puede ser la siguiente
+          {t("testimoniosPage.cta.title")}
         </h2>
         <p className="text-primary-foreground/80 max-w-2xl mx-auto mb-8 text-lg">
-          Agenda tu cita hoy y comienza el camino hacia la sonrisa que siempre
-          soñaste. Nuestro equipo esta listo para ayudarte.
+          {t("testimoniosPage.cta.desc")}
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button
@@ -26,7 +30,7 @@ export function TestimoniosCTA() {
               rel="noopener noreferrer"
             >
               <Phone className="w-5 h-5" />
-              Agenda tu cita
+              {t("testimoniosPage.cta.agenda")}
             </a>
           </Button>
           <Button
@@ -36,7 +40,7 @@ export function TestimoniosCTA() {
             className="gap-2 text-base bg-transparent text-primary-foreground border-primary-foreground/30 hover:bg-primary-foreground/10 hover:text-primary-foreground"
           >
             <Link href="/servicios">
-              Ver servicios
+              {t("testimoniosPage.cta.services")}
               <ArrowRight className="w-5 h-5" />
             </Link>
           </Button>

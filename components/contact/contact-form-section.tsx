@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
 import { Send, CheckCircle, MessageCircle, Mail, Phone } from "lucide-react"
+import { useLanguage } from "@/lib/language-context"
 
 export function ContactFormSection() {
   const [submitted, setSubmitted] = useState(false)
@@ -16,6 +17,7 @@ export function ContactFormSection() {
     phone: "",
     message: "",
   })
+  const { t } = useLanguage()
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
@@ -37,13 +39,13 @@ export function ContactFormSection() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <span className="inline-block px-4 py-1.5 bg-primary/10 text-primary text-sm font-medium rounded-full mb-4">
-              Contacto
+              {t("contacto.form.badge")}
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Envíanos un mensaje
+              {t("contacto.form.title")}
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Completa el formulario y te responderemos lo antes posible. Tambien puedes enviarlo directamente por WhatsApp.
+              {t("contacto.form.desc")}
             </p>
           </div>
 
@@ -55,20 +57,20 @@ export function ContactFormSection() {
                     <CheckCircle className="w-8 h-8 text-primary" />
                   </div>
                   <h3 className="text-xl font-semibold text-foreground mb-2">
-                    Mensaje enviado
+                    {t("contacto.form.sent")}
                   </h3>
                   <p className="text-muted-foreground">
-                    Gracias por contactarnos. Te responderemos pronto.
+                    {t("contacto.form.sentDesc")}
                   </p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid sm:grid-cols-2 gap-6">
                     <div className="space-y-2">
-                      <Label htmlFor="name">Nombre completo</Label>
+                      <Label htmlFor="name">{t("contacto.form.name")}</Label>
                       <Input
                         id="name"
-                        placeholder="Tu nombre"
+                        placeholder={t("contacto.form.namePlaceholder")}
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                         required
@@ -76,11 +78,11 @@ export function ContactFormSection() {
                       />
                     </div>
                     <div className="space-y-2">
-                      <Label htmlFor="email">Correo electronico</Label>
+                      <Label htmlFor="email">{t("contacto.form.email")}</Label>
                       <Input
                         id="email"
                         type="email"
-                        placeholder="tu@correo.com"
+                        placeholder={t("contacto.form.emailPlaceholder")}
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                         required
@@ -90,11 +92,11 @@ export function ContactFormSection() {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="phone">Telefono (opcional)</Label>
+                    <Label htmlFor="phone">{t("contacto.form.phone")}</Label>
                     <Input
                       id="phone"
                       type="tel"
-                      placeholder="+57 303 303 3981"
+                      placeholder={t("contacto.form.phonePlaceholder")}
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                       className="h-12"
@@ -102,10 +104,10 @@ export function ContactFormSection() {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="message">Mensaje</Label>
+                    <Label htmlFor="message">{t("contacto.form.message")}</Label>
                     <Textarea
                       id="message"
-                      placeholder="Cuentanos en que podemos ayudarte..."
+                      placeholder={t("contacto.form.messagePlaceholder")}
                       rows={5}
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
@@ -116,7 +118,7 @@ export function ContactFormSection() {
                   <div className="flex flex-col sm:flex-row gap-4 pt-2">
                     <Button type="submit" size="lg" className="flex-1 gap-2 h-12">
                       <Send className="w-4 h-4" />
-                      Enviar mensaje
+                      {t("contacto.form.send")}
                     </Button>
                     <Button
                       type="button"
@@ -127,7 +129,7 @@ export function ContactFormSection() {
                       disabled={!formData.name || !formData.message}
                     >
                       <MessageCircle className="w-4 h-4" />
-                      Enviar por WhatsApp
+                      {t("contacto.form.sendWhatsapp")}
                     </Button>
                   </div>
                 </form>
@@ -145,13 +147,13 @@ export function ContactFormSection() {
                     <Mail className="w-5 h-5 text-primary" />
                   </div>
                   <div>
-                    <p className="text-xs text-muted-foreground">Correo electronico</p>
+                    <p className="text-xs text-muted-foreground">{t("contacto.form.emailLabel")}</p>
                     <p className="font-medium">contacto@neodental.com</p>
                   </div>
                 </a>
-                
+
                 <div className="hidden sm:block w-px h-10 bg-border" />
-                
+
                 <a
                   href="tel:+573053033981"
                   className="flex items-center gap-3 text-foreground hover:text-primary transition-colors group"
@@ -160,7 +162,7 @@ export function ContactFormSection() {
                     <Phone className="w-5 h-5 text-primary" />
                   </div>
                   <div>
-                    <p className="text-xs text-muted-foreground">Telefono</p>
+                    <p className="text-xs text-muted-foreground">{t("contacto.form.phoneLabel")}</p>
                     <p className="font-medium">+57 305 303 3981</p>
                   </div>
                 </a>

@@ -1,17 +1,22 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { MessageCircle, Phone } from "lucide-react"
 import Link from "next/link"
+import { useLanguage } from "@/lib/language-context"
 
 export function ServicesCTA() {
+  const { t } = useLanguage()
+
   return (
     <section className="py-16 lg:py-20 bg-secondary">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4 text-balance">
-            No encuentras el servicio que buscas?
+            {t("servicios.cta.title")}
           </h2>
           <p className="text-muted-foreground mb-8 leading-relaxed">
-            Contactanos directamente y te asesoraremos sobre el tratamiento mas adecuado para ti. Estamos aqui para resolver todas tus dudas.
+            {t("servicios.cta.desc")}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="gap-2">
@@ -21,13 +26,13 @@ export function ServicesCTA() {
                 rel="noopener noreferrer"
               >
                 <MessageCircle className="w-5 h-5" />
-                Escribenos por WhatsApp
+                {t("servicios.cta.whatsapp")}
               </a>
             </Button>
             <Button asChild variant="outline" size="lg" className="gap-2 bg-transparent">
               <Link href="/contacto">
                 <Phone className="w-5 h-5" />
-                Ver contacto
+                {t("servicios.cta.contact")}
               </Link>
             </Button>
           </div>

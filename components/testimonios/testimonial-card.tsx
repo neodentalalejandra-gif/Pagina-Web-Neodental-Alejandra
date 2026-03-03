@@ -4,6 +4,7 @@ import { useState } from "react"
 import Image from "next/image"
 import { Star, ArrowRight } from "lucide-react"
 import { cn } from "@/lib/utils"
+import { useLanguage } from "@/lib/language-context"
 
 interface TestimonialCardProps {
   name: string
@@ -25,6 +26,7 @@ export function TestimonialCard({
   date,
 }: TestimonialCardProps) {
   const [showAfter, setShowAfter] = useState(false)
+  const { t } = useLanguage()
 
   return (
     <article className="bg-card rounded-2xl border border-border overflow-hidden shadow-sm hover:shadow-md transition-shadow">
@@ -40,12 +42,12 @@ export function TestimonialCard({
           onKeyDown={(e) => {
             if (e.key === "Enter" || e.key === " ") setShowAfter(!showAfter)
           }}
-          aria-label={`Ver foto ${showAfter ? "antes" : "despues"} del tratamiento de ${name}`}
+          aria-label={`${t("testimoniosPage.viewPhoto")} ${showAfter ? t("testimoniosPage.before").toLowerCase() : t("testimoniosPage.after").toLowerCase()} - ${name}`}
         >
           {/* Before Image */}
           <Image
             src={beforeImage}
-            alt={`Antes del tratamiento de ${name}`}
+            alt={`${t("testimoniosPage.before")} - ${name}`}
             fill
             className={cn(
               "object-cover transition-opacity duration-500",
@@ -55,7 +57,7 @@ export function TestimonialCard({
           {/* After Image */}
           <Image
             src={afterImage}
-            alt={`Despues del tratamiento de ${name}`}
+            alt={`${t("testimoniosPage.after")} - ${name}`}
             fill
             className={cn(
               "object-cover transition-opacity duration-500",
@@ -73,11 +75,11 @@ export function TestimonialCard({
                   : "bg-card text-foreground"
               )}
             >
-              {showAfter ? "Despues" : "Antes"}
+              {showAfter ? t("testimoniosPage.after") : t("testimoniosPage.before")}
             </span>
             <span className="flex items-center gap-1 text-xs text-white/80 font-medium">
               <ArrowRight className="w-3 h-3" />
-              {showAfter ? "Mover para ver antes" : "Mover para ver despues"}
+              {showAfter ? t("testimoniosPage.hoverBefore") : t("testimoniosPage.hoverAfter")}
             </span>
           </div>
         </div>
