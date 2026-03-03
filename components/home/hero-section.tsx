@@ -1,9 +1,14 @@
+"use client"
+
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Phone, Calendar } from "lucide-react"
+import { useLanguage } from "@/lib/language-context"
 
 export function HeroSection() {
+  const { t } = useLanguage()
+
   return (
     <section className="relative overflow-hidden bg-secondary">
       <div className="container mx-auto px-4 lg:px-8">
@@ -11,30 +16,31 @@ export function HeroSection() {
           {/* Content */}
           <div className="order-2 lg:order-1 text-center lg:text-left">
             <span className="inline-block px-4 py-1.5 bg-primary/10 text-primary text-sm font-medium rounded-full mb-6">
-              Bienvenido a Neodental
+              {t("hero.badge")}
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6 text-balance">
-              Una experiencia{" "}
-              <span className="text-primary">transformadora</span> en salud dental
+              {t("hero.title1")}
+              <span className="text-primary">{t("hero.titleHighlight")}</span>
+              {t("hero.title2")}
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8 max-w-lg mx-auto lg:mx-0">
-              Sabemos la importancia y el impacto que tiene tu salud oral a nivel fisico y emocional. Contamos con un gran equipo de especialistas con enfoque humano y profesional.
+              {t("hero.description")}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button asChild size="lg" className="gap-2">
                 <a
-                  href="https://wa.me/573004862085?text=Hola,%20me%20gustaría%20agendar%20una%20cita"
+                  href="https://wa.me/573053033981?text=Hola,%20me%20gustaría%20agendar%20una%20cita"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <Calendar className="w-5 h-5" />
-                  Agenda tu cita
+                  {t("hero.cta")}
                 </a>
               </Button>
               <Button asChild variant="outline" size="lg" className="gap-2 bg-transparent">
                 <Link href="/contacto">
                   <Phone className="w-5 h-5" />
-                  Contactanos
+                  {t("hero.contact")}
                 </Link>
               </Button>
             </div>
@@ -42,16 +48,16 @@ export function HeroSection() {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-border">
               <div>
-                <p className="text-3xl font-bold text-primary">+10</p>
-                <p className="text-sm text-muted-foreground">Años de experiencia</p>
+                <p className="text-3xl font-bold text-primary">{t("hero.stat1Value")}</p>
+                <p className="text-sm text-muted-foreground">{t("hero.stat1Label")}</p>
               </div>
               <div>
-                <p className="text-3xl font-bold text-primary">+5000</p>
-                <p className="text-sm text-muted-foreground">Pacientes felices</p>
+                <p className="text-3xl font-bold text-primary">{t("hero.stat2Value")}</p>
+                <p className="text-sm text-muted-foreground">{t("hero.stat2Label")}</p>
               </div>
               <div>
-                <p className="text-3xl font-bold text-primary">100%</p>
-                <p className="text-sm text-muted-foreground">Satisfaccion</p>
+                <p className="text-3xl font-bold text-primary">{t("hero.stat3Value")}</p>
+                <p className="text-sm text-muted-foreground">{t("hero.stat3Label")}</p>
               </div>
             </div>
           </div>
@@ -76,8 +82,8 @@ export function HeroSection() {
                     <span className="text-2xl">🦷</span>
                   </div>
                   <div>
-                    <p className="font-semibold text-foreground">Dra. Alejandra Riascos</p>
-                    <p className="text-sm text-muted-foreground">Odontologa Especializada</p>
+                    <p className="font-semibold text-foreground">{t("hero.doctorName")}</p>
+                    <p className="text-sm text-muted-foreground">{t("hero.doctorTitle")}</p>
                   </div>
                 </div>
               </div>

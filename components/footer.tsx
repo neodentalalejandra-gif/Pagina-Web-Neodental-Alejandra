@@ -1,20 +1,23 @@
+"use client"
+
 import Link from "next/link"
 import Image from "next/image"
 import { Facebook, Instagram, MapPin, Mail, Phone, Clock } from "lucide-react"
+import { useLanguage } from "@/lib/language-context"
 
-const navigation = {
-  main: [
-    { name: "Inicio", href: "/" },
-    { name: "Servicios", href: "/servicios" },
-    { name: "Contacto", href: "/contacto" },
-  ],
-  services: [
-    { name: "Limpieza Dental", href: "/servicios" },
-    { name: "Blanqueamiento", href: "/servicios" },
-    { name: "Ortodoncia", href: "/servicios" },
-    { name: "Implantes", href: "/servicios" },
-  ],
-}
+const navigationKeys = [
+  { key: "nav.inicio", href: "/" },
+  { key: "nav.servicios", href: "/servicios" },
+  { key: "nav.testimonios", href: "/testimonios" },
+  { key: "nav.contacto", href: "/contacto" },
+]
+
+const serviceKeys = [
+  { key: "footer.limpiezaDental", href: "/servicios" },
+  { key: "footer.blanqueamiento", href: "/servicios" },
+  { key: "footer.ortodoncia", href: "/servicios" },
+  { key: "footer.implantes", href: "/servicios" },
+]
 
 const socialLinks = [
   {
@@ -30,6 +33,8 @@ const socialLinks = [
 ]
 
 export function Footer() {
+  const { t } = useLanguage()
+
   return (
     <footer className="bg-foreground text-background">
       <div className="container mx-auto px-4 lg:px-8 py-12 lg:py-16">
@@ -46,7 +51,7 @@ export function Footer() {
               />
             </Link>
             <p className="text-background/70 text-sm leading-relaxed mb-4">
-              Tu sonrisa es nuestra prioridad. Ofrecemos servicios odontologicos de alta calidad con un equipo profesional dedicado a tu bienestar.
+              {t("footer.brand")}
             </p>
             <div className="flex gap-4">
               {socialLinks.map((item) => (
@@ -66,15 +71,15 @@ export function Footer() {
 
           {/* Navigation */}
           <div>
-            <h3 className="text-sm font-semibold mb-4">Navegacion</h3>
+            <h3 className="text-sm font-semibold mb-4">{t("footer.navigation")}</h3>
             <ul className="space-y-3">
-              {navigation.main.map((item) => (
-                <li key={item.name}>
+              {navigationKeys.map((item) => (
+                <li key={item.key}>
                   <Link
                     href={item.href}
                     className="text-sm text-background/70 hover:text-primary transition-colors"
                   >
-                    {item.name}
+                    {t(item.key)}
                   </Link>
                 </li>
               ))}
@@ -83,15 +88,15 @@ export function Footer() {
 
           {/* Services */}
           <div>
-            <h3 className="text-sm font-semibold mb-4">Servicios</h3>
+            <h3 className="text-sm font-semibold mb-4">{t("footer.services")}</h3>
             <ul className="space-y-3">
-              {navigation.services.map((item) => (
-                <li key={item.name}>
+              {serviceKeys.map((item) => (
+                <li key={item.key}>
                   <Link
                     href={item.href}
                     className="text-sm text-background/70 hover:text-primary transition-colors"
                   >
-                    {item.name}
+                    {t(item.key)}
                   </Link>
                 </li>
               ))}
@@ -100,22 +105,22 @@ export function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="text-sm font-semibold mb-4">Contacto</h3>
+            <h3 className="text-sm font-semibold mb-4">{t("footer.contact")}</h3>
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                 <span className="text-sm text-background/70">
                   Tv 39D #74 36 Consultorio 201,<br />
-                  Laureles - Estadio, Medellín, Laureles, Medellín, Antioquia
+                  Laureles - Estadio, Medellin, Laureles, Medellin, Antioquia
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-primary shrink-0" />
                 <a
-                  href="tel:+573004862085"
+                  href="tel:+57305303398"
                   className="text-sm text-background/70 hover:text-primary transition-colors"
                 >
-                  +57 300 486 2085
+                  +57 305 303 3981
                 </a>
               </li>
               <li className="flex items-center gap-3">
@@ -130,8 +135,8 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <Clock className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                 <span className="text-sm text-background/70">
-                  Lun - Vie: 8:00 AM - 6:00 PM<br />
-                  Sab: 8:00 AM - 2:00 PM
+                  {t("footer.schedule.weekdays")}<br />
+                  {t("footer.schedule.saturday")}
                 </span>
               </li>
             </ul>
@@ -142,10 +147,10 @@ export function Footer() {
         <div className="mt-12 pt-8 border-t border-background/10">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-sm text-background/50">
-              2025 Neodental. Todos los derechos reservados.
+              {t("footer.copyright")}
             </p>
             <p className="text-sm text-background/50">
-              Diseñado con cuidado para tu sonrisa
+              {t("footer.tagline")}
             </p>
           </div>
         </div>

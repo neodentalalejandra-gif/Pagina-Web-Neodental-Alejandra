@@ -6,6 +6,7 @@ import './globals.css'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
 import { WhatsAppButton } from '@/components/whatsapp-button'
+import { LanguageProvider } from '@/lib/language-context'
 
 const _inter = Inter({ subsets: ["latin"] })
 const _poppins = Poppins({ 
@@ -45,10 +46,12 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className={`font-sans antialiased`}>
-        <Header />
-        <main>{children}</main>
-        <Footer />
-        <WhatsAppButton />
+        <LanguageProvider>
+          <Header />
+          <main>{children}</main>
+          <Footer />
+          <WhatsAppButton />
+        </LanguageProvider>
         <Analytics />
       </body>
     </html>
