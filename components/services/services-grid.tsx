@@ -21,7 +21,7 @@ const serviceDefinitions = [
     waKey: "servicios.s2.wa",
   },
   {
-    image: "/images/services/ortodoncia.jpg",
+    image: "/images/services/restauraciones.jpg",
     titleKey: "servicios.s3.title",
     descKey: "servicios.s3.desc",
     featureKeys: ["servicios.s3.f1", "servicios.s3.f2", "servicios.s3.f3", "servicios.s3.f4"],
@@ -42,11 +42,25 @@ const serviceDefinitions = [
     waKey: "servicios.s5.wa",
   },
   {
-    image: "/images/services/restauraciones.jpg",
+    image: "/images/services/limpieza-dental.jpg",
     titleKey: "servicios.s6.title",
     descKey: "servicios.s6.desc",
     featureKeys: ["servicios.s6.f1", "servicios.s6.f2", "servicios.s6.f3", "servicios.s6.f4"],
     waKey: "servicios.s6.wa",
+  },
+  {
+    image: "/images/services/ortodoncia.jpg",
+    titleKey: "servicios.s7.title",
+    descKey: "servicios.s7.desc",
+    featureKeys: ["servicios.s7.f1", "servicios.s7.f2", "servicios.s7.f3", "servicios.s7.f4"],
+    waKey: "servicios.s7.wa",
+  },
+  {
+    image: "/images/services/ortodoncia.jpg",
+    titleKey: "servicios.s8.title",
+    descKey: "servicios.s8.desc",
+    featureKeys: ["servicios.s8.f1", "servicios.s8.f2", "servicios.s8.f3", "servicios.s8.f4"],
+    waKey: "servicios.s8.wa",
   },
 ]
 

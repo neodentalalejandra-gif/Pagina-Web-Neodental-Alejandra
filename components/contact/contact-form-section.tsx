@@ -140,7 +140,7 @@ export function ContactFormSection() {
             <div className="bg-secondary px-6 lg:px-10 py-6 border-t border-border">
               <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-12">
                 <a
-                  href="mailto:contacto@neodental.com"
+                  href="mailto:neodental@gmail.com"
                   className="flex items-center gap-3 text-foreground hover:text-primary transition-colors group"
                 >
                   <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">

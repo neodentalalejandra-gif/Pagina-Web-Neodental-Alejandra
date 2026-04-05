@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import Image from "next/image"
-import { Star, ArrowRight } from "lucide-react"
+import { Star } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { useLanguage } from "@/lib/language-context"
 
@@ -64,24 +64,6 @@ export function TestimonialCard({
               showAfter ? "opacity-100" : "opacity-0"
             )}
           />
-
-          {/* Label overlay */}
-          <div className="absolute inset-0 flex items-end justify-between p-4 bg-linear-to-t from-black/60 to-transparent">
-            <span
-              className={cn(
-                "px-3 py-1 rounded-full text-xs font-semibold transition-all",
-                showAfter
-                  ? "bg-primary text-primary-foreground"
-                  : "bg-card text-foreground"
-              )}
-            >
-              {showAfter ? t("testimoniosPage.after") : t("testimoniosPage.before")}
-            </span>
-            <span className="flex items-center gap-1 text-xs text-white/80 font-medium">
-              <ArrowRight className="w-3 h-3" />
-              {showAfter ? t("testimoniosPage.hoverBefore") : t("testimoniosPage.hoverAfter")}
-            </span>
-          </div>
         </div>
       </div>
 

@@ -2,7 +2,6 @@ import { Metadata } from "next"
 import { ContactHero } from "@/components/contact/contact-hero"
 import { LocationSection } from "@/components/contact/location-section"
 import { SocialSection } from "@/components/contact/social-section"
-import { ContactFormSection } from "@/components/contact/contact-form-section"
 
 export const metadata: Metadata = {
   title: "Contacto | Neodental",
@@ -15,7 +14,6 @@ export default function ContactoPage() {
       <ContactHero />
       <LocationSection />
       <SocialSection />
-      <ContactFormSection />
     </>
   )
 }
