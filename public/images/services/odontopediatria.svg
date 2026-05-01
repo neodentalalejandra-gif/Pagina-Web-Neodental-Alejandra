@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Niño siendo atendido por una odontopediatra</title>
+  <desc id="desc">Ilustración de un niño feliz en una silla dental con una odontopediatra atendiendo su sonrisa.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#edf4ff" />
+      <stop offset="100%" stop-color="#dfe9f7" />
+    </linearGradient>
+    <linearGradient id="shirt" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2d6ef7" />
+      <stop offset="100%" stop-color="#0e4ad6" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)" rx="80" />
+  <rect x="120" y="410" width="960" height="280" rx="40" fill="#ffffff" opacity="0.9" />
+  <ellipse cx="600" cy="700" rx="470" ry="80" fill="#bed4f7" />
+  <path d="M280 430c0-30 20-55 45-55h560c25 0 45 25 45 55v130H280V430Z" fill="#eef4ff" />
+  <path d="M330 430h540v120H330z" fill="#f4f8ff" />
+  <circle cx="550" cy="260" r="100" fill="#ffe1c7" />
+  <path d="M520 320c20 30 60 30 80 0" stroke="#b27d60" stroke-width="16" stroke-linecap="round" fill="none" />
+  <circle cx="520" cy="245" r="18" fill="#3b3f50" />
+  <circle cx="610" cy="245" r="18" fill="#3b3f50" />
+  <path d="M500 215c0-40 80-40 80 0" stroke="#3b3f50" stroke-width="14" fill="none" stroke-linecap="round" />
+  <path d="M525 280c-10 40 40 60 65 40" stroke="#b27d60" stroke-width="18" fill="none" stroke-linecap="round" />
+  <path d="M470 320c0 0 15 40 50 45" stroke="#b27d60" stroke-width="18" fill="none" stroke-linecap="round" />
+  <path d="M620 365c0 0 15 60 0 90" stroke="#b27d60" stroke-width="24" stroke-linecap="round" />
+  <path d="M540 360c0 0-20 50-5 82" stroke="#b27d60" stroke-width="22" stroke-linecap="round" />
+  <path d="M611 391c20 0 68 20 90 22 0 0 14 14 14 32v76H540v-80c0-20 12-25 20-30 14-7 45-10 51-20 0 0 5-10-8-20z" fill="#8a9cbf" />
+  <path d="M530 375c-45 0-80 24-90 60-18 55-10 120 0 155h250c15-45 20-110 0-150-12-28-42-65-90-65h-70Z" fill="#fff2db" />
+  <path d="M460 498c0 0 60 14 130 14s130-14 130-14v32c0 25-45 46-130 46s-130-21-130-46v-32Z" fill="#d7c5a7" />
+  <path d="M440 490c0 0 100-50 220 0" stroke="#c68f69" stroke-width="18" fill="none" stroke-linecap="round" />
+  <path d="M680 310c60-12 120 30 140 80 18 40 12 95 0 140-8 30-40 50-70 44" fill="#f7f7f7" stroke="#ced7e8" stroke-width="16" />
+  <path d="M755 315c30 18 40 55 36 80" stroke="#3b3f50" stroke-width="14" />
+  <path d="M760 380c0 12 10 22 22 22" stroke="#3b3f50" stroke-width="14" stroke-linecap="round" />
+  <path d="M730 325c15 20 55 18 70 0" stroke="#3b3f50" stroke-width="16" stroke-linecap="round" />
+  <path d="M680 310c15 30 40 48 80 48" stroke="#3b3f50" stroke-width="16" stroke-linecap="round" />
+  <rect x="480" y="520" width="220" height="90" rx="35" fill="url(#shirt)" />
+  <text x="200" y="160" font-family="Inter, sans-serif" font-size="52" fill="#2b447a" font-weight="700">Odontopediatría</text>
+</svg>

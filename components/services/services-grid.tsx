@@ -56,7 +56,7 @@ const serviceDefinitions = [
     waKey: "servicios.s7.wa",
   },
   {
-    image: "/images/services/ortodoncia.jpg",
+    image: "/images/services/odontopedriatia.jpg",
     titleKey: "servicios.s8.title",
     descKey: "servicios.s8.desc",
     featureKeys: ["servicios.s8.f1", "servicios.s8.f2", "servicios.s8.f3", "servicios.s8.f4"],

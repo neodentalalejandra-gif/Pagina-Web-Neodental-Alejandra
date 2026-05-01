@@ -27,7 +27,7 @@ export function SocialSection() {
       name: "Instagram",
       descKey: "contacto.social.instagram",
       icon: Instagram,
-      href: "https://instagram.com/neodental",
+      href: "https://www.instagram.com/dra.alejandrariascos/",
       color: "bg-gradient-to-br from-[#833AB4] via-[#FD1D1D] to-[#F77737] hover:opacity-90",
       followers: "@neodental.co",
     },

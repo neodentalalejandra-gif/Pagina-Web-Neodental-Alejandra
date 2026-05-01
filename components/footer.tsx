@@ -13,10 +13,11 @@ const navigationKeys = [
 ]
 
 const serviceKeys = [
-  { key: "footer.limpiezaDental", href: "/servicios" },
-  { key: "footer.blanqueamiento", href: "/servicios" },
+  { key: "footer.periodonciaImplantologia", href: "/servicios" },
+  { key: "footer.esteticaDental", href: "/servicios" },
   { key: "footer.ortodoncia", href: "/servicios" },
-  { key: "footer.implantes", href: "/servicios" },
+  { key: "footer.endodoncia", href: "/servicios" },
+  { key: "footer.odontopediatria", href: "/servicios" },
 ]
 
 const socialLinks = [
@@ -27,7 +28,7 @@ const socialLinks = [
   },
   {
     name: "Instagram",
-    href: "https://instagram.com/dra.alejandrariascos",
+    href: "https://www.instagram.com/dra.alejandrariascos/",
     icon: Instagram,
   },
 ]
@@ -111,7 +112,7 @@ export function Footer() {
                 <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                 <span className="text-sm text-background/70">
                   Tv 39D #74 36 Consultorio 201,<br />
-                  Laureles - Estadio, Medellin, Laureles, Medellin, Antioquia
+                  Laureles - Estadio Laureles, Medellin - Antioquia
                 </span>
               </li>
               <li className="flex items-center gap-3">
@@ -129,7 +130,7 @@ export function Footer() {
                   href="mailto:neodental@gmail.com"
                   className="text-sm text-background/70 hover:text-primary transition-colors"
                 >
-                  neodental@gmail.com
+                  neodentalr@gmail.com
                 </a>
               </li>
               <li className="flex items-start gap-3">
