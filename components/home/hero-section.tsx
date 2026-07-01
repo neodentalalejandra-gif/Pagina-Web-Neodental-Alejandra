@@ -68,8 +68,8 @@ export function HeroSection() {
               <div className="absolute inset-0 bg-primary/20 rounded-3xl transform rotate-3" />
               <div className="relative h-full rounded-3xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/images/doctora-neodental.jpg"
-                  alt="Dra. Alejandra Riascos - Odontologa especialista en Neodental"
+                  src="/images/inicio-resultado-dental.jpg"
+                  alt="Resultado de tratamiento dental - sonrisa restaurada en Neodental"
                   fill
                   className="object-cover"
                   priority
